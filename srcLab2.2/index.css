@@ -1,0 +1,162 @@
+/* I. Selectors */
+/* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+    margin: 15px 15px;
+    padding: 50px;
+    border: 2px dotted turquoise;
+}
+.style-me1 {
+    color: red;
+}
+#style-me2 {
+    color: blue;
+}
+#style-me2.style-me1 {
+    color: purple;
+}
+
+/* Put styles for questions 2.1 and 2.2 here */
+.my-descendants-are-styled p {
+    background: red;
+}
+.my-descendants-are-styled > p {
+    background: lightgreen;
+}
+
+/* II. Box model and common properties */
+/* Put styles for questions 1-8 here */
+.box {
+    background-color: seagreen;
+    padding: 2em 5rem 20% 70px;
+    margin: 5%;
+    height: 100vh !important;
+    width: 80%;
+    border: 10px dotted coral;
+    border: 2rem dashed violet;
+    border: 10px solid blue;
+    box-sizing: border-box;
+    box-sizing: content-box;
+    overflow: visible;
+    height: 20vh !important;
+    width: 20vw;
+    overflow: scroll;
+    overflow: visible;
+    outline: solid;
+    border-radius: 20px;
+    border-radius: 2em;
+    border-radius: 50%;
+    height: 300px !important;
+    width: 300px;
+    padding: 200px;
+    background-image: url(./assets/images/img1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* vh unit on height shrinks to a certian point, 
+then takes the full screen of the shrunken window.*/
+
+/* % will shrink the words to overlap if shrinking the window too small
+    is % reactive to screen size too? */
+
+/* Content box doesnt seem to care about the parent limitations 
+with border or padding. The border box seems to take parent parameters 
+into account when deciding on the size of boxes */
+
+/* Overflow:visible runs the boxes together and overlaps words. overflow:scroll keeps the boxes within their own borders and gives a scroll bar to users so they can scroll through the content */
+
+/* III. Positioning */
+/* Put styles for questions 1-3 here */
+
+.position-absolute {
+    position: absolute;
+    /* top: 50px; */
+    bottom: 20px;
+    top: 0;
+    position: left;
+    position: right;
+}
+.position-relative {
+    position: relative;
+    background-color: orange;
+}
+.position-sticky {
+    position: sticky;
+    background-color: red;
+    position: top;
+}
+
+/* IV. Styling text */
+/* Put styles for questions 1-10 here */
+
+.text-style {
+    color: burlywood;
+    font-size: 20px;
+    font-size: small;
+    font-size: 3rem;
+    font-size: small;
+    line-height: 10%;
+    line-height: 10rem;
+    line-height: normal;
+    font-weight: bold;
+    font-weight: 400;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    text-align: center;
+    letter-spacing: 10rem;
+    letter-spacing: normal;
+    word-spacing: 20rem;
+    word-spacing: normal;
+    text-transform: capitalize;
+    text-transform: uppercase;
+    text-transform: none;
+    text-decoration: dashed;
+    text-decoration: line-through;
+}
+
+/* V. Styling links */
+/* Put styles for questions 1-3 here */
+
+a:link {
+    color: rgb(197, 138, 252);
+    font-size: xx-large;
+    font-weight: 800;
+    text-decoration: wavy;
+}
+a:hover {
+    color: rgb(127, 11, 234);
+    text-decoration: underline;
+}
+a:active {
+    color: rgb(66, 7, 122);
+    text-decoration: dotted;
+}
+a:focus {
+    color: rgb(52, 25, 77);
+    text-decoration: double;
+}
+a:visited {
+    color: rgb(25, 22, 219);
+    font-style: italic;
+}
+
+/* VI. calc() */
+/* Put styles for questions 1-3 here */
+
+.calc-style {
+    width: 100vw;
+    background-color: greenyellow;
+    width: calc(100vw - 100px);
+}
+.fixed-width-col {
+    width: 350px;
+    display: inline-block;
+}
+.fluid-col {
+    display: inline-block;
+    width: calc(100% - 400px);
+}
